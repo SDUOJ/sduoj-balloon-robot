@@ -1,0 +1,16 @@
+spring:
+  rabbitmq:
+    host: 47.95.245.39
+    username: "sduoj"
+    password: "sduoj-mq"
+    virtual-host: "/sduoj-dev"
+    listener:
+      simple:
+#        prefetch: 1
+#        concurrency: 1
+#        max-concurrency: 1
+        default-requeue-rejected: true
+        retry:
+          initial-interval: 3000
+          enabled: true
+          max-attempts: 3

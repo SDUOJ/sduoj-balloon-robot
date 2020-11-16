@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SDUOJ Balloon Robot</title>
+</head>
+<body>
+<h1>Manage Volunteers</h1>
+
+<form action="#" th:action="@{/addVolunteers}" method="post">
+    <textarea name="volunteers" placeholder="name1 phoneNumber2&#10;name2 phoneNumber2&#10;..."></textarea>
+    <p><input type="submit" value="AddVolunteers" /></p>
+</form>
+
+
+</body>
+</html>
